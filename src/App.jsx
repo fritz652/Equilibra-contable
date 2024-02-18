@@ -1,16 +1,13 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import "./App.css";
-import { Typography } from "@material-tailwind/react";
+import { useState } from 'react'
+import './App.css'
+import { StickyNavbar } from './Components/Navbar'
+=======
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <>
-      <Typography>Hola a todos</Typography>
-    </>
+    <div className='App'>
+      <StickyNavbar />
+    </div>
   );
 }
 
