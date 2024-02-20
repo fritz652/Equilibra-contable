@@ -11,6 +11,12 @@ module.exports = withMT({
         darkGreen: "#206B5E",
         lightGreen: "#95CEC4",
       },
+      fontFamily: {
+        sans: ["Montserrat", "sans-serif"],
+        "Montserrat-Regular": ["Montserrat-Regular", "sans-serif"],
+        "Montserrat-Bold": ["Montserrat-Bold", "sans-serif"],
+        "Montserrat-SemiBold": ["Montserrat-SemiBold", "sans-serif"],
+      },
     },
   },
   plugins: [],

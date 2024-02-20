@@ -1,9 +1,8 @@
 import "./App.css";
-import { Typography } from "@material-tailwind/react";
-import Cards from "./components/card/Cards";
+import CarouselCards from "./components/carousel/CarouselCards";
 
 function App() {
-  return <Cards />;
+  return <CarouselCards />;
 }
 
 export default App;

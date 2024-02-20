@@ -7,9 +7,12 @@ import {
   Button,
 } from "@material-tailwind/react";
 
-function Cards() {
+function Cards({ title, description, img }) {
   return (
-    <Card shadow={false} className="w-full max-w-[26.688rem] bg-lightGreen ">
+    <Card
+      shadow={false}
+      className="w-full max-w-[32rem] h-[32rem] bg-lightGreen justify-around shadow-2xl"
+    >
       <CardHeader
         color="transparent"
         floated={false}
@@ -18,28 +21,41 @@ function Cards() {
       >
         <img
           className="h-max-[6.25rem] max-w-[6.25rem] rounded-full object-cover object-center ml-6"
-          src="https://res.cloudinary.com/dsdmjhkms/image/upload/v1708124276/Equilibra-Contable/monotributo_kf1gbf.png"
-          alt="monotributo imagen"
+          src={img}
+          alt="img cards servicios"
         />
         <div className="flex w-full flex-col gap-0.5">
           <div className="flex items-center justify-between">
-            <Typography variant="h4" color="white">
-              Monotributo
+            <Typography
+              variant="h4"
+              color="white"
+              className="font-Montserrat-Bold text-3xl"
+            >
+              {title}
             </Typography>
           </div>
         </div>
       </CardHeader>
-      <CardBody className="mb-8 p-0 ml-6 mr-6 flex flex-col">
-        <Typography color="black" variant="paragraph">
-          Sos Monotributista y queres profesionalizar tu negocio teniendo
-          seguimiento, estrategia fiscal y asesoría mensual.
+      <CardBody className="mb-12 p-0 mx-10 flex flex-col justify-between">
+        <Typography
+          color="black"
+          variant="paragraph"
+          className="font-Montserrat-Regular text-xl"
+        >
+          {description}
         </Typography>
         <Button
           ripple={true}
           fullWidth={false}
-          className="mt-6 bg-darkGreen w-auto mx-auto"
+          className="mt-8 bg-darkGreen w-auto mx-auto"
         >
-          <Typography variant="h6">Consultar</Typography>
+          <Typography
+            variant="h6"
+            color="white"
+            className="font-Montserrat-SemiBold"
+          >
+            Consultar
+          </Typography>
         </Button>
       </CardBody>
     </Card>
