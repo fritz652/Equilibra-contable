@@ -1,11 +1,10 @@
-import { useState } from 'react'
-import './App.css'
-import { StickyNavbar } from './Components/Navbar'
-=======
+import { useState } from "react";
+import "./App.css";
+import { StickyNavbar } from "./Components/Navbar";
 
 function App() {
   return (
-    <div className='App'>
+    <div className="App">
       <StickyNavbar />
     </div>
   );
