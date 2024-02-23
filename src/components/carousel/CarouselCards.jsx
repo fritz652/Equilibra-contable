@@ -10,6 +10,7 @@ import {
 import { cardsData } from "../../data/CardsData";
 import Cards from "../card/Cards";
 import "./Carousel.css";
+import { useEffect, useState } from "react";
 
 function CarouselCards() {
   const duplicatedCards = [
@@ -18,13 +19,29 @@ function CarouselCards() {
     ...cardsData,
     ...cardsData,
   ];
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsSmallScreen(window.innerWidth < 900);
+    };
+
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <Swiper
       effect={"coverflow"}
       grabCursor={true}
       centeredSlides={true}
       loop={true}
-      slidesPerView={4} // Mostrar 5 tarjetas en total
+      slidesPerView={isSmallScreen ? "auto" : 4}
       coverflowEffect={{
         rotate: 0,
         stretch: 0,
