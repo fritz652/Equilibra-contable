@@ -49,8 +49,7 @@ function CarouselCards() {
         modifier: 2.5,
         slideShadows: false,
       }}
-      modules={[EffectCoverflow, Mousewheel, Keyboard]}
-      mousewheel={true}
+      modules={[EffectCoverflow, Keyboard]}
       keyboard={true}
       className="swiper_container"
     >

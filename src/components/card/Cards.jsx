@@ -11,13 +11,13 @@ function Cards({ title, description, img }) {
   return (
     <Card
       shadow={false}
-      className="w-full max-w-[32rem] h-[32rem] bg-lightGreen justify-around shadow-2xl"
+      className="w-full max-w-[29rem] h-[30rem] bg-lightGreen justify-around shadow-2xl"
     >
       <CardHeader
         color="transparent"
         floated={false}
         shadow={false}
-        className="mx-0 flex items-center gap-6 pt-0 pb-6 mt-8"
+        className="mx-0 flex items-center gap-6 pt-0 pb-6 mt-4"
       >
         <img
           className="h-max-[6.25rem] max-w-[6.25rem] rounded-full object-cover object-center ml-6"
@@ -26,22 +26,14 @@ function Cards({ title, description, img }) {
         />
         <div className="flex w-full flex-col gap-0.5">
           <div className="flex items-center justify-between">
-            <Typography
-              variant="h4"
-              color="white"
-              className="font-Montserrat-Bold text-3xl"
-            >
+            <Typography variant="h2" color="white" className="text-3xl w-3/5">
               {title}
             </Typography>
           </div>
         </div>
       </CardHeader>
       <CardBody className="mb-12 p-0 mx-10 flex flex-col justify-between">
-        <Typography
-          color="black"
-          variant="paragraph"
-          className="font-Montserrat-Regular text-xl"
-        >
+        <Typography color="black" variant="lead" className="text-xl">
           {description}
         </Typography>
         <Button
@@ -49,11 +41,7 @@ function Cards({ title, description, img }) {
           fullWidth={false}
           className="mt-8 bg-darkGreen w-auto mx-auto"
         >
-          <Typography
-            variant="h6"
-            color="white"
-            className="font-Montserrat-SemiBold"
-          >
+          <Typography variant="h6" color="white" className="text-xl">
             Consultar
           </Typography>
         </Button>
