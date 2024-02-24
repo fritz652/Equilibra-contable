@@ -6,7 +6,7 @@ const ServiciosSection = () => {
     <div className="mt-12">
       <Typography
         variant="h3"
-        className="text-center text-darkBlue text-3xl mb-3"
+        className="text-center text-darkBlue text-4xl mb-3"
       >
         SERVICIOS
       </Typography>

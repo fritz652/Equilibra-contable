@@ -33,7 +33,6 @@ const NosotraSection = () => {
       <CardHeader
         shadow={false}
         floated={false}
-        // className="m-0 w-1/2 shrink-0 rounded-none"
         className={`${
           isSmallScreen ? "w-auto" : "w-1/2"
         } rounded-none shrink-0 m-0`}
@@ -44,7 +43,7 @@ const NosotraSection = () => {
           className="w-full object-cover h-full"
         />
       </CardHeader>
-      <CardBody className="">
+      <CardBody className="ml-5">
         <Typography variant="h3" className="text-darkBlue text-4xl mb-3">
           Nosotras
         </Typography>

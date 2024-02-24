@@ -7,9 +7,8 @@ import NosotraSection from "./sections/NosotraSection";
 function App() {
   return (
     <div className="App">
-      {/* <StickyNavbar />
-      <ServiciosSection /> */}
-      <NosotraSection />
+      <StickyNavbar />
+      <ServiciosSection />
     </div>
   );
 }
