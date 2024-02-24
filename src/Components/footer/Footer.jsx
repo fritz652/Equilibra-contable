@@ -1,30 +1,21 @@
 import { Typography } from "@material-tailwind/react";
-import postImage from "../assets/post.png";
-import wspImage from "../assets/wsp.png";
-import linkedinImage from "../assets/linkedin.png";
-import eqLogoImage from "../assets/EQ_logo.png";
+import FooterData from "../../data/FooterData.json"; 
+import "./Footer.css"
 
-const Footer = ({ data }) => {
-  const sections = [
-    { key: "mail", icon: "Mail", image: postImage, text: "Mail" },
-    { key: "wsp", icon: "WhatsApp", image: wspImage, text: "WhatsApp" },
-    { key: "iconIns", icon: "Instagram", text: data.iconLk },
-    { key: "iconLk", icon: "LinkedIn", image: linkedinImage, text: data.lk },
-    { key: "eqLogo", icon: "Equilibra Contable", image: eqLogoImage, text: "" },
-  ];
+const Footer = () => {
+  const { footerSection } = FooterData; 
+  const { p, socials } = footerSection[0]; 
 
   return (
     <div>
-      <Typography color="white">
-        {data.p}
+      <Typography color="white" className="t-24">
+        {p}
       </Typography>
-      {sections.map((section) => (
-        <div key={section.key}>
-          {section.image && <img src={section.image} alt={section.icon} />}
-          <Typography color="white">
-            {section.text}
-          </Typography>
-        </div>
+      {socials.map((social, index) => (
+        <Typography  className="t-21" as="a"  href={social.src} key={index} color="white">
+          {social.icon && <img src={social.icon} alt="Icon" />}
+          <span>{social.p}</span>
+        </Typography>
       ))}
     </div>
   );

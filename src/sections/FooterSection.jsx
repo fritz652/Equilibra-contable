@@ -11,7 +11,7 @@ const FooterSection = () => {
         <div key={index}>
           <Typography
             variant="h3"
-            className="text-center text-white text-3xl mb-3"
+            className="text-left text-white text-3xl mb-3 t-36"
           >
             {section.title}
           </Typography>

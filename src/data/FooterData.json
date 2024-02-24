@@ -7,20 +7,39 @@
             "btn":"Enviar"
         }
     ],
-    "footerSection":[
-        {
-            "title":"Canales de comunicación",
-            "p":"Trabajemos juntos, envianos un mensaje:",
-            "iconMail":"../assets/post.png",
-            "mail":"info@equilibracontable.com",
-            "iconWsp":"../asset/wsp.png",
-            "wsp":"11 7124 4404 / 11 5389 1391",
-            "iconIns":"@equilibracontable",
-            "iconLk":"../asset/linkedin.png",
-            "lk":"Equilibra Contable",
-            "eqLogo":"../asset/EQ_logo.png"
-        }
-    ],
+    "footerSection":[        {
+        "title":"Canales de comunicación",
+        "p":"Trabajemos juntos, envianos un mensaje:",
+        "socials":[
+            {
+                "icon":"https://res.cloudinary.com/dphjwkeox/image/upload/v1708756888/samples/Equilibra/post_uuknhl.png",
+                "p":"info@equilibracontable.com",
+                "src":"#"
+            },
+            {
+                "icon":"https://res.cloudinary.com/dphjwkeox/image/upload/v1708757001/samples/Equilibra/wsp_w2xbh6.png",
+                "p":"11 7124 4404 / 11 5389 1391",
+                "src":"#"
+            },
+            {   
+                "iconIns":"https://res.cloudinary.com/dphjwkeox/image/upload/v1708756887/samples/Equilibra/instagram_jz06yb.png",
+                "p":"@equilibracontable",
+                "src":"#"
+            },
+            {
+                "icon":"https://res.cloudinary.com/dphjwkeox/image/upload/v1708756888/samples/Equilibra/linkedin_znxsos.png",
+                "p":"Equilibra Contable",
+                "src":"#"
+            },
+            {
+                "icon":"https://res.cloudinary.com/dphjwkeox/image/upload/v1708756887/samples/Equilibra/EQ_logo_h3ybnb.png",
+                "src":"#"
+            }
+        ]
+            }
+        ],
+
+
     "wsSection":[
         {
             "wsBtnFloat":"/"
