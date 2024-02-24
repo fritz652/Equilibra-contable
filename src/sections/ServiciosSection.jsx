@@ -3,7 +3,7 @@ import { Typography } from "@material-tailwind/react";
 
 const ServiciosSection = () => {
   return (
-    <div className="mt-12">
+    <div className="mt-12" id="servicios">
       <Typography
         variant="h3"
         className="text-center text-darkBlue text-3xl mb-3"

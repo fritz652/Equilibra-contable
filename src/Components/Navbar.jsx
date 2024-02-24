@@ -21,59 +21,86 @@ export function StickyNavbar() {
     );
   }, []);
 
+  const handleClick = (id) => {
+    const element = document.getElementById(id);
+    element.scrollIntoView({ behavior: "smooth" });
+  };
+
   const navList = (
-    <ul className="mt-2 mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
-      <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="p-1 font-normal text-base lg:text-lg"
-      >
-        <a href="#" className="flex items-center">
-          Inicio
-        </a>
-      </Typography>
-      <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="p-1 font-normal text-base lg:text-lg"
-      >
-        <a href="#" className="flex items-center">
-          Servicios
-        </a>
-      </Typography>
-      <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="p-1 font-normal text-base lg:text-lg"
-      >
-        <a href="#" className="flex items-center">
-          Contacto
-        </a>
-      </Typography>
-      <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="p-1 font-normal text-base lg:text-lg"
-      >
-        <a href="#" className="flex items-center">
-          Nosotras
-        </a>
-      </Typography>
-      <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="p-1 font-normal text-base lg:text-lg"
-      >
-        <a href="#" className="flex items-center">
-          Comunicación
-        </a>
-      </Typography>
-    </ul>
+    <nav>
+      <ul className="mt-2 mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
+        <Typography
+          as="li"
+          variant="small"
+          color="blue-gray"
+          className="p-1 font-normal text-base lg:text-lg"
+        >
+          <a
+            href="#inicio"
+            className="flex items-center"
+            onClick={() => handleClick("inicio")}
+          >
+            Inicio
+          </a>
+        </Typography>
+        <Typography
+          as="li"
+          variant="small"
+          color="blue-gray"
+          className="p-1 font-normal text-base lg:text-lg"
+        >
+          <a
+            href="#servicios"
+            className="flex items-center"
+            onClick={() => handleClick("servicios")}
+          >
+            Servicios
+          </a>
+        </Typography>
+        <Typography
+          as="li"
+          variant="small"
+          color="blue-gray"
+          className="p-1 font-normal text-base lg:text-lg"
+        >
+          <a
+            href="#contacto"
+            className="flex items-center"
+            onClick={() => handleClick("contacto")}
+          >
+            Contacto
+          </a>
+        </Typography>
+        <Typography
+          as="li"
+          variant="small"
+          color="blue-gray"
+          className="p-1 font-normal text-base lg:text-lg"
+        >
+          <a
+            href="#nosotras"
+            className="flex items-center"
+            onClick={() => handleClick("nosotras")}
+          >
+            Nosotras
+          </a>
+        </Typography>
+        <Typography
+          as="li"
+          variant="small"
+          color="blue-gray"
+          className="p-1 font-normal text-base lg:text-lg"
+        >
+          <a
+            href="#comunicacion"
+            className="flex items-center"
+            onClick={() => handleClick("comunicacion")}
+          >
+            Comunicación
+          </a>
+        </Typography>
+      </ul>
+    </nav>
   );
 
   return (
@@ -130,7 +157,7 @@ export function StickyNavbar() {
         </div>
         <MobileNav open={openNav}>{navList}</MobileNav>
       </Navbar>
-      <div>
+      <div id="inicio">
         <div
           className="w-full h-screen relative bg-cover bg-no-repeat "
           style={{ height: "600px" }}
