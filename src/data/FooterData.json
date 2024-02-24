@@ -1,0 +1,29 @@
+{
+    "ContactSection":[
+        {
+            "name":"Nombre y Apellido *",
+            "email":"Email*",
+            "text":"Asunto",
+            "btn":"Enviar"
+        }
+    ],
+    "footerSection":[
+        {
+            "title":"Canales de comunicación",
+            "p":"Trabajemos juntos, envianos un mensaje:",
+            "iconMail":"../assets/post.png",
+            "mail":"info@equilibracontable.com",
+            "iconWsp":"../asset/wsp.png",
+            "wsp":"11 7124 4404 / 11 5389 1391",
+            "iconIns":"@equilibracontable",
+            "iconLk":"../asset/linkedin.png",
+            "lk":"Equilibra Contable",
+            "eqLogo":"../asset/EQ_logo.png"
+        }
+    ],
+    "wsSection":[
+        {
+            "wsBtnFloat":"/"
+        }
+    ]
+}
