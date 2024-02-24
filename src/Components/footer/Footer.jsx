@@ -7,12 +7,13 @@ const Footer = () => {
   const { p, socials } = footerSection[0]; 
 
   return (
-    <div>
-      <Typography color="white" className="t-24">
+    <div className="d-grid">
+      <Typography color="white"  className="px-12 text-left mx-10 t-16" variant="lead"
+            >
         {p}
       </Typography>
       {socials.map((social, index) => (
-        <Typography  className="t-21" as="a"  href={social.src} key={index} color="white">
+        <Typography  className="py-5 px-10 text-left t-14 mx-20 d-flex " as="a"  href={social.src} key={index} color="white">
           {social.icon && <img src={social.icon} alt="Icon" />}
           <span>{social.p}</span>
         </Typography>
