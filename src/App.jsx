@@ -3,6 +3,9 @@ import "./App.css";
 import { StickyNavbar } from "./Components/Navbar";
 import ServiciosSection from "./sections/ServiciosSection";
 import FooterSection from "./sections/FooterSection";
+import ButtonWspSection from "./sections/ButtonWspSection/ButtonWspSection";
+
+
 
 function App() {
   return (
@@ -10,6 +13,8 @@ function App() {
       <StickyNavbar />
       <ServiciosSection />
       <FooterSection/>
+      <ButtonWspSection/>
+      
     </div>
   );
 }

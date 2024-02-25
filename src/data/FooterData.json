@@ -14,35 +14,33 @@
             {
                 "icon":"https://res.cloudinary.com/dphjwkeox/image/upload/v1708756888/samples/Equilibra/post_uuknhl.png",
                 "p":"info@equilibracontable.com",
-                "src":"#"
+                "href":"#"
             },
             {
                 "icon":"https://res.cloudinary.com/dphjwkeox/image/upload/v1708757001/samples/Equilibra/wsp_w2xbh6.png",
                 "p":"11 7124 4404 / 11 5389 1391",
-                "src":"#"
+                "href":"https://api.whatsapp.com/send?phone=5491171244404"
             },
             {   
                 "icon":"https://res.cloudinary.com/dphjwkeox/image/upload/v1708756887/samples/Equilibra/instagram_jz06yb.png",
                 "p":"@equilibracontable",
-                "src":"#"
+                "href":"#"
             },
             {
                 "icon":"https://res.cloudinary.com/dphjwkeox/image/upload/v1708756888/samples/Equilibra/linkedin_znxsos.png",
                 "p":"Equilibra Contable",
-                "src":"#"
+                "href":"#"
             },
             {
                 "icon":"https://res.cloudinary.com/dphjwkeox/image/upload/v1708756887/samples/Equilibra/EQ_logo_h3ybnb.png",
-                "src":"#"
+                "href":"#"
             }
         ]
             }
         ],
-
-
     "wsSection":[
         {
-            "wsBtnFloat":"/"
+            "href":"https://api.whatsapp.com/send?phone=5491171244404"
         }
     ]
 }
