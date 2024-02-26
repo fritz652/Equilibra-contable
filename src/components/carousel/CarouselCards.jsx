@@ -15,9 +15,6 @@ import { useEffect, useState } from "react";
 function CarouselCards() {
   const duplicatedCards = [
     ...cardsData,
-    ...cardsData,
-    ...cardsData,
-    ...cardsData,
   ];
   const [isSmallScreen, setIsSmallScreen] = useState(false);
 
@@ -41,12 +38,12 @@ function CarouselCards() {
       grabCursor={true}
       centeredSlides={true}
       loop={true}
-      slidesPerView={isSmallScreen ? "auto" : 4}
+      slidesPerView={isSmallScreen ? "auto" : 3}
       coverflowEffect={{
         rotate: 0,
-        stretch: 0,
-        depth: 100,
-        modifier: 2.5,
+        stretch: 20,
+        depth: 80,
+        modifier: 4,
         slideShadows: false,
       }}
       modules={[EffectCoverflow, Keyboard]}
