@@ -12,9 +12,9 @@ module.exports = withMT({
         lightGreen: "#95CEC4",
         gray: "#D9D9D9"
       },
-      fontFamily: { 
-      sans: ['Montserrat', 'sans-serif']
-      } 
+      fontFamily: {
+        sans: ["Montserrat", "sans-serif"],
+      },
     },
   },
   plugins: [],
