@@ -38,10 +38,10 @@ function CarouselCards() {
       grabCursor={true}
       centeredSlides={true}
       loop={true}
-      slidesPerView={isSmallScreen ? "auto" : 3}
+      slidesPerView={isSmallScreen ? "auto" : 4}
       coverflowEffect={{
         rotate: 0,
-        stretch: 20,
+        stretch: 0,
         depth: 80,
         modifier: 4,
         slideShadows: false,
