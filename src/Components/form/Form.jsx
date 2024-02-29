@@ -1,10 +1,8 @@
 import React from "react";
-import {
-    Typography,
-  } from "@material-tailwind/react";
-   
-  export function Form() {
-    const [result, setResult] = React.useState("");
+import { Typography } from "@material-tailwind/react";
+
+export function Form() {
+  const [result, setResult] = React.useState("");
 
     const onSubmit = async (event) => {
       event.preventDefault();
