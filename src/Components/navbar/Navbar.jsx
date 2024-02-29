@@ -178,7 +178,7 @@ export function StickyNavbar() {
         <div className="h-full w-full bg-white">
           <Typography
             variant="lead"
-            className="py-20 px-10 text-center text-xl"
+            className="py-20 px-10 text-center text-2xl"
           >
             Somos un equipo de contadoras profesionales, que acompaña y
             asesora a emprendedores, empresas y profesionales que buscan
