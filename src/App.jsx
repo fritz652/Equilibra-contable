@@ -1,10 +1,11 @@
 /* import { useState } from "react"; */
 import "./App.css";
-import { StickyNavbar } from "./Components/Navbar";
+import { StickyNavbar } from "./Components/navbar/Navbar";
 import ServiciosSection from "./sections/ServiciosSection";
 import FooterSection from "./sections/FooterSection";
 import ButtonWspSection from "./sections/ButtonWspSection/ButtonWspSection";
-
+import NosotrasSection from "./sections/NosotrasSection";
+import { Form } from "./Components/form/Form";
 
 
 function App() {
@@ -12,9 +13,11 @@ function App() {
     <div className="App">
       <StickyNavbar />
       <ServiciosSection />
-      <FooterSection/>
-      <ButtonWspSection/>
       
+      <Form />
+      <NosotrasSection />
+      <ButtonWspSection/>
+      <FooterSection/>
     </div>
   );
 }
