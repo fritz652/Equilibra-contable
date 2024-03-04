@@ -36,35 +36,37 @@ function CarouselCards() {
   }, []);
 
   return (
-    <Swiper
-      effect={"coverflow"}
-      grabCursor={true}
-      centeredSlides={true}
-      loop={true}
-      slidesPerView={isSmallScreen ? "auto" : 4}
-      coverflowEffect={{
-        rotate: 0,
-        stretch: 0,
-        depth: 100,
-        modifier: 2.5,
-        slideShadows: false,
-      }}
-      modules={[EffectCoverflow, Keyboard]}
-      keyboard={true}
-      className="swiper_container"
-    >
-      {duplicatedCards.map((card, index) => {
-        return (
-          <SwiperSlide key={index}>
-            <Cards
-              title={card.title}
-              description={card.description}
-              img={card.img}
-            />
-          </SwiperSlide>
-        );
-      })}
-    </Swiper>
+    <div className="swiper_container_wrapper">
+      <Swiper
+        effect={"coverflow"}
+        grabCursor={true}
+        centeredSlides={true}
+        loop={true}
+        slidesPerView={isSmallScreen ? "auto" : 4}
+        coverflowEffect={{
+          rotate: 0,
+          stretch: 10,
+          depth: 80,
+          modifier: 2.5,
+          slideShadows: false,
+        }}
+        modules={[EffectCoverflow, Keyboard]}
+        keyboard={true}
+        className="swiper_container"
+      >
+        {duplicatedCards.map((card, index) => {
+          return (
+            <SwiperSlide key={index}>
+              <Cards
+                title={card.title}
+                description={card.description}
+                img={card.img}
+              />
+            </SwiperSlide>
+          );
+        })}
+      </Swiper>
+    </div>
   );
 }
 
