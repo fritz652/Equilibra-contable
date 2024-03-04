@@ -1,46 +1,47 @@
 {
-    "ContactSection":[
+  "ContactSection": [
+    {
+      "name": "Nombre y Apellido *",
+      "email": "Email*",
+      "text": "Asunto",
+      "btn": "Enviar"
+    }
+  ],
+  "footerSection": [
+    {
+      "title": "Canales de comunicación",
+      "p": "Trabajemos juntos, envianos un mensaje:",
+      "socials": [
         {
-            "name":"Nombre y Apellido *",
-            "email":"Email*",
-            "text":"Asunto",
-            "btn":"Enviar"
-        }
-    ],
-    "footerSection":[        {
-        "title":"Canales de comunicación",
-        "p":"Trabajemos juntos, envianos un mensaje:",
-        "socials":[
-            {
-                "icon":"https://res.cloudinary.com/dphjwkeox/image/upload/v1708756888/samples/Equilibra/post_uuknhl.png",
-                "p":"info@equilibracontable.com",
-                "href":"#"
-            },
-            {
-                "icon":"https://res.cloudinary.com/dphjwkeox/image/upload/v1708757001/samples/Equilibra/wsp_w2xbh6.png",
-                "p":"11 7124 4404 / 11 5389 1391",
-                "href":"https://api.whatsapp.com/send?phone=5491171244404"
-            },
-            {   
-                "icon":"https://res.cloudinary.com/dphjwkeox/image/upload/v1708756887/samples/Equilibra/instagram_jz06yb.png",
-                "p":"@equilibracontable",
-                "href":"https://www.instagram.com/equilibracontable/"
-            },
-            {
-                "icon":"https://res.cloudinary.com/dphjwkeox/image/upload/v1708756888/samples/Equilibra/linkedin_znxsos.png",
-                "p":"Equilibra Contable",
-                "href":"https://www.linkedin.com/company/equilibra-contable/"
-            },
-            {
-                "icon":"https://res.cloudinary.com/dphjwkeox/image/upload/v1708756887/samples/Equilibra/EQ_logo_h3ybnb.png",
-                "href":"#"
-            }
-        ]
-            }
-        ],
-    "wsSection":[
+          "icon": "https://res.cloudinary.com/dphjwkeox/image/upload/v1708756888/samples/Equilibra/post_uuknhl.png",
+          "p": "info@equilibracontable.com",
+          "href": "#"
+        },
         {
-            "href":"https://api.whatsapp.com/send?phone=5491171244404"
+          "icon": "https://res.cloudinary.com/dphjwkeox/image/upload/v1708757001/samples/Equilibra/wsp_w2xbh6.png",
+          "p": "11 7124 4404 / 11 5389 1391",
+          "href": "https://api.whatsapp.com/send?phone=5491171244404"
+        },
+        {
+          "icon": "https://res.cloudinary.com/dphjwkeox/image/upload/v1708756887/samples/Equilibra/instagram_jz06yb.png",
+          "p": "@equilibracontable",
+          "href": "https://www.instagram.com/equilibracontable/"
+        },
+        {
+          "icon": "https://res.cloudinary.com/dphjwkeox/image/upload/v1708756888/samples/Equilibra/linkedin_znxsos.png",
+          "p": "Equilibra Contable",
+          "href": "https://www.linkedin.com/company/equilibra-contable/"
+        },
+        {
+          "icon": "https://res.cloudinary.com/dsdmjhkms/image/upload/v1709577438/Equilibra-Contable/icons/njaumvjur14wfcwwwycj.svg",
+          "href": "#"
         }
-    ]
+      ]
+    }
+  ],
+  "wsSection": [
+    {
+      "href": "https://api.whatsapp.com/send?phone=5491171244404"
+    }
+  ]
 }
