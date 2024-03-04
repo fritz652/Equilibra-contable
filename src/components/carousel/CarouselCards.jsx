@@ -3,9 +3,7 @@ import "swiper/css";
 import "swiper/css/effect-coverflow";
 import {
   EffectCoverflow,
-  Mousewheel,
   Keyboard,
-  Autoplay,
 } from "swiper/modules";
 import { cardsData } from "../../data/CardsData";
 import Cards from "../card/Cards";
