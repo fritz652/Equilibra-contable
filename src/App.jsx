@@ -5,7 +5,8 @@ import ServiciosSection from "./sections/ServiciosSection";
 import FooterSection from "./sections/FooterSection";
 import ButtonWspSection from "./sections/ButtonWspSection/ButtonWspSection";
 import NosotrasSection from "./sections/NosotrasSection";
-import { Form } from "./Components/form/Form";
+//import { Form } from "./Components/form/Form";
+import Formulario from "./Components/form/Fromulario";
 
 
 function App() {
@@ -13,8 +14,8 @@ function App() {
     <div className="App">
       <StickyNavbar />
       <ServiciosSection />
-      
-      <Form />
+      {/* <Form /> */}
+      <Formulario/>
       <NosotrasSection />
       <ButtonWspSection/>
       <FooterSection/>
