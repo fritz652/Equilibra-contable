@@ -1,0 +1,104 @@
+.t-14{
+    font-size: 14px !important;/* 21 */
+}
+
+.t-16{
+    font-size: 16px !important;/* 24 */
+}
+
+.t-20{
+    font-size: 20px !important;/* 36 */
+}
+
+.d-flex{
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 40px;
+    max-height: 250px;
+}
+
+.d-grid{
+    display: grid;
+    grid-template-areas: 
+    "uno seis seis"
+    "dos seis seis"
+    "tres seis seis"
+    "cuatro seis seis"
+    "cinco seis seis"
+    ;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    grid-template-columns: 1fr 30%;
+}
+
+.footer{
+    padding: 30px 20px 10px 20px;/* 80px; */
+}
+
+.iconFooter{
+    height: 75% !important;
+}
+.d-grid :nth-child(1) {
+    grid-area: uno;
+    align-items: center;
+}
+.d-grid :nth-child(2) {
+    grid-area: dos;
+    align-items: center;
+}
+.d-grid :nth-child(3) {
+    grid-area: tres;
+    align-items: center;
+}
+.d-grid :nth-child(4) {
+    grid-area: cuatro;
+    align-items: center;
+}
+.d-grid :nth-child(5) {
+    grid-area: cinco;
+    align-items: center;
+}
+.d-grid :nth-child(6) {
+    grid-area: seis;
+    align-items: center;
+}
+
+@media (max-width: 900px) {
+    .d-grid{
+        grid-template-areas: 
+        "uno seis seis"
+        "dos seis seis"
+        "tres seis seis"
+        "cuatro seis seis"
+        "cinco seis seis"
+        ;
+        grid-template-rows: 20% 20% 20% 20% 20%;
+        grid-template-columns: 1fr 30%;
+    }
+}
+@media (max-width: 768px) {
+    .d-grid{
+        grid-template-areas: 
+        "uno uno uno"
+        "dos dos dos"
+        "tres tres tres"
+        "cuatro cuatro  cuatro"
+        "cinco cinco cinco"
+        "seis seis seis"
+        ;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 30%;
+        grid-template-columns: 1fr 1fr 1fr;
+    };
+    .d-grid :nth-child(6) {
+        padding: 5px;
+    }
+}
+@media (max-width: 450px) {
+    .d-grid :nth-child(1),
+    .d-grid :nth-child(2),
+    .d-grid :nth-child(3),
+    .d-grid :nth-child(4),
+    .d-grid :nth-child(5),
+    .d-grid :nth-child(6){
+        font-size: 12px !important;
+    }
+}

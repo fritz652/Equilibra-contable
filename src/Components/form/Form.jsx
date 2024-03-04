@@ -1,5 +1,6 @@
 import React from "react";
 import { Typography } from "@material-tailwind/react";
+import { Switch } from "@material-tailwind/react";
 
 export function Form() {
   const [result, setResult] = React.useState("");
@@ -56,6 +57,9 @@ export function Form() {
             <textarea id="message" name="message" placeholder="Escribí tu mensaje aquí..." className="w-full placeholder-black placeholder-opacity-100 bg-gray rounded-2xl  focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-900 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out" required></textarea>
           </div>
         </div>
+        <Typography>
+          <Switch label="Recibir newsletter" color="blue" defaultChecked  style={{ color: "red" }}  />
+        </Typography>
         <div className="p-2 w-full flex justify-end">
           <button type="submit" className="flex text-white bg-lightGreen border-0 py-2 px-8 focus:outline-none rounded-2xl text-lg w-1/2 text-center shadow"><span className="w-full text-center">Enviar</span></button>
         </div>
