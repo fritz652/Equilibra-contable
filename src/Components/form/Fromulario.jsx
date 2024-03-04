@@ -71,6 +71,7 @@ const Formulario = () => {
     setNombre("");
     setEmail("");
     setMensaje("");
+    setSubject("");
     setErrores({});
 
     // SweetAlert
