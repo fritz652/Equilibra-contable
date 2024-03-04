@@ -101,7 +101,7 @@ const Formulario = () => {
             onSubmit={handleSubmit}
             noValidate
           >
-            <div className="p-2 w-1/2">
+            <div className="p-3 w-1/2">
               <div className="relative">
                 <input
                   type="text"
@@ -118,7 +118,7 @@ const Formulario = () => {
                 )}
               </div>
             </div>
-            <div className="p-2 w-1/2">
+            <div className="p-3 w-1/2">
               <div className="relative">
                 <input
                   type="email"
@@ -135,7 +135,7 @@ const Formulario = () => {
                 )}
               </div>
             </div>
-            <div className="p-2 w-full">
+            <div className="p-3 w-full">
               <div className="relative">
                 <input
                   type="text"
@@ -152,7 +152,7 @@ const Formulario = () => {
                 )}
               </div>
             </div>
-            <div className="p-2 w-full">
+            <div className="p-3 w-full">
               <div className="relative">
                 <textarea
                   type="text"
