@@ -7,9 +7,9 @@ import {
   IconButton,
   Card,
 } from "@material-tailwind/react";
-import logo from "./assets/logo-navbar.svg";
-import hero from "./assets/hero-image.jpg";
-import logohero from "./assets/logo-hero.svg";
+import logo from "../../assets/logo-navbar.svg";
+import hero from "../../assets/hero-image.jpg";
+import logohero from "../../assets/logo-hero.svg";
 
 export function StickyNavbar() {
   const [openNav, setOpenNav] = React.useState(false);
