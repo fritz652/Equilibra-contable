@@ -1,4 +1,5 @@
 p.error-message {
-    color: red;
-  }
-  
+  color: rgb(250, 47, 47);
+  font-weight: bold;
+  -webkit-text-stroke: 0.08px rgb(0, 0, 0);
+}

@@ -108,7 +108,7 @@ const Formulario = () => {
                   id="nombre"
                   name="nombre"
                   placeholder="Nombre y apellido"
-                  className="w-full placeholder-black placeholder-opacity-100 bg-gray rounded-2xl  focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                  className="w-full placeholder-black placeholder-opacity-100 bg-gray rounded-2xl focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-lg outline-none text-gray-700 py-4 px-3 leading-8 transition-colors duration-200 ease-in-out"
                   value={nombre}
                   onChange={(e) => setNombre(e.target.value)}
                   required
@@ -125,7 +125,7 @@ const Formulario = () => {
                   id="email"
                   name="email"
                   placeholder="Email*"
-                  className="w-full placeholder-black placeholder-opacity-100 bg-gray rounded-2xl  focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                  className="w-full placeholder-black placeholder-opacity-100 bg-gray rounded-2xl  focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-lg outline-none text-gray-700 py-4 px-3 leading-8 transition-colors duration-200 ease-in-out"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   required
@@ -142,7 +142,7 @@ const Formulario = () => {
                   id="subject"
                   name="subject"
                   placeholder="Asunto"
-                  className="w-full placeholder-black placeholder-opacity-100 bg-gray rounded-2xl focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 rounded-2xl-2xl transition-colors duration-200 ease-in-out"
+                  className="w-full placeholder-black placeholder-opacity-100 bg-gray rounded-2xl focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-lg outline-none text-gray-700 py-4 px-3 leading-8 rounded-2xl-2xl transition-colors duration-200 ease-in-out"
                   value={subject}
                   onChange={(e) => setSubject(e.target.value)}
                   required
@@ -153,13 +153,13 @@ const Formulario = () => {
               </div>
             </div>
             <div className="p-3 w-full">
-              <div className="relative">
+              <div className="">
                 <textarea
                   type="text"
                   id="mensaje"
                   name="mensaje"
                   placeholder="Escribí tu mensaje aquí no mayor a 200 caracteres"
-                  className="w-full placeholder-black placeholder-opacity-100 bg-gray rounded-2xl focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-900 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                  className="w-full placeholder-black placeholder-opacity-100 bg-gray rounded-2xl focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-38 text-lg outline-none text-gray-900 pb-32 pt-4 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
                   required
                   value={mensaje}
                   onChange={(e) => setMensaje(e.target.value)}
@@ -190,7 +190,7 @@ const Formulario = () => {
                       "before:hidden left-0.5 border border-white bg-white w-8 h-8 p-2",
                     style: {
                       backgroundImage:
-                        "url('https://res.cloudinary.com/dsdmjhkms/image/upload/v1709560071/Equilibra-Contable/icons/drplvqt2l0b7znchecs3.png')",
+                        "url('https://res.cloudinary.com/dsdmjhkms/image/upload/v1709565756/Equilibra-Contable/icons/cmmicam7golvxib2uriz.png')",
                       backgroundSize: "cover",
                       backgroundPosition: "center",
                     },
@@ -203,9 +203,9 @@ const Formulario = () => {
             <div className="p-2 w-full flex justify-end">
               <button
                 type="submit"
-                className="flex text-white bg-lightGreen border-0 py-2 px-8 focus:outline-none rounded-2xl text-lg w-1/2 text-center shadow shadow-md"
+                className="flex text-white bg-lightGreen border-0 py-4 px-8 focus:outline-none rounded-2xl text-lg w-1/2 text-center shadow shadow-md"
               >
-                <Typography variant="h5" className="w-full text-center ">
+                <Typography variant="h4" className="w-full text-center ">
                   Enviar
                 </Typography>
               </button>

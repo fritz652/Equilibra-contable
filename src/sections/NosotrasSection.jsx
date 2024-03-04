@@ -44,11 +44,11 @@ const NosotrasSection = () => {
             className="w-full object-cover h-full"
           />
         </CardHeader>
-        <CardBody className="ml-5">
+        <CardBody className="ml-5 justify-center">
           <Typography variant="h3" className="text-darkBlue text-4xl mb-8 mt-3">
             Nosotras
           </Typography>
-          <Typography variant="lead" className="text-darkBlue text-2xl mb-3">
+          <Typography variant="lead" className="text-darkBlue text-2xl mb-4">
             Para que nos conozcas un poquito más te vamos a contar acerca de
             nosotras... Somos Tatiana Tojeiro y Silvana Mendez, ambas Contadoras
             Públicas recibidas de la UBA, donde además de estudiar, nos
@@ -61,7 +61,7 @@ const NosotrasSection = () => {
             abriendo camino y hace unos 3 años materializamos este sueño creando
             Equilibra Contable.
           </Typography>
-          <Typography variant="h5" className="text-darkBlue my-3 text-2xl">
+          <Typography variant="h5" className="text-darkBlue my-5 text-2xl">
             ¿Te preguntarás porqué elegirnos? 
           </Typography>
           <Typography variant="lead" className="text-darkBlue text-2xl">
@@ -71,11 +71,11 @@ const NosotrasSection = () => {
             emprendimientos y empresas en su crecimiento, generando solvencia y
             durabilidad en su desarrollo y su economía.
           </Typography>
-          <Typography variant="h5" className="text-darkBlue my-3 text-2xl">
+          <Typography variant="h5" className="text-darkBlue my-5 text-2xl">
             Estamos matriculadas en CABA y PBA: 
           </Typography>
-          <div>
-            <Typography variant="h6" className=" text-darkBlue text-2xl mb-4">
+          <div className="mt-8">
+            <Typography variant="h6" className=" text-darkBlue text-2xl mb-5">
               Tatiana Tojeiro 
               <Typography variant="lead" className="text-2xl">
                 CPCECABA CP T434 F134 UBA

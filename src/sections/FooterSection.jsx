@@ -6,12 +6,12 @@ const FooterSection = () => {
   const { footerSection } = FooterData;
 
   return (
-    <div  className="footer bg-darkGreen">
+    <div id="comunicacion" className="footer bg-darkGreen">
       {footerSection.map((section, index) => (
         <div key={index}>
           <Typography
             variant="h3"
-            className="text-left text-white    px-12 mx-10 t-20"
+            className="text-left text-white px-12 mx-10 t-20"
           >
             {section.title}
           </Typography>
