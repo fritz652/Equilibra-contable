@@ -1,4 +1,4 @@
-/* html {
+html {
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
@@ -28,7 +28,7 @@ body {
   html {
     zoom: 2.5;
   }
-} */
+}
 
 ::-webkit-scrollbar {
   width: 1.3rem;
@@ -85,9 +85,4 @@ body {
 .swiper-slide-shadow-left,
 .swiper-slide-shadow-right {
   display: none;
-}
-
-.swiper_container_wrapper {
-  /* margin-left: 16px; /* Ajusta el valor según tus necesidades */
-  /* margin-right: 16px;  */
 }
