@@ -31,7 +31,11 @@
 }
 
 .footer{
-    padding: 50px;
+    padding: 30px 20px 10px 20px;/* 80px; */
+}
+
+.iconFooter{
+    height: 75% !important;
 }
 .d-grid :nth-child(1) {
     grid-area: uno;
@@ -85,7 +89,7 @@
         grid-template-columns: 1fr 1fr 1fr;
     };
     .d-grid :nth-child(6) {
-        padding: 20px;
+        padding: 5px;
     }
 }
 @media (max-width: 450px) {
