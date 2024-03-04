@@ -41,7 +41,7 @@ function Cards({ title, description, img}) {
           fullWidth={false}
           className="mt-8 bg-darkGreen w-auto mx-auto"
         >
-          <a href="https://api.whatsapp.com/send?phone=5491171244404">
+          <a href="https://api.whatsapp.com/send?phone=5491171244404" target="_blank" >
             <Typography   variant="h6" color="white" className="text-xl">
               Consultar
             </Typography>
