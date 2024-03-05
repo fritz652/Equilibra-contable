@@ -7,11 +7,11 @@ import {
   Button,
 } from "@material-tailwind/react";
 
-function Cards({ title, description, img}) {
+function Cards({ title, description, img }) {
   return (
     <Card
       shadow={false}
-      className="w-full max-w-[29rem] h-[30rem] bg-lightGreen justify-around shadow-2xl"
+      className="w-full max-w-[29.5rem] h-[30rem] bg-lightGreen justify-around shadow-2xl"
     >
       <CardHeader
         color="transparent"
@@ -41,8 +41,11 @@ function Cards({ title, description, img}) {
           fullWidth={false}
           className="mt-8 bg-darkGreen w-auto mx-auto"
         >
-          <a href="https://api.whatsapp.com/send?phone=5491171244404" target="_blank" >
-            <Typography   variant="h6" color="white" className="text-xl">
+          <a
+            href="https://api.whatsapp.com/send?phone=5491171244404"
+            target="_blank"
+          >
+            <Typography variant="h6" color="white" className="text-xl">
               Consultar
             </Typography>
           </a>
