@@ -1,4 +1,4 @@
-import CarouselCards from "../Components/carousel/CarouselCards";
+import CarouselCards from "../componentes/carousel/CarouselCards";
 import { Typography } from "@material-tailwind/react";
 
 const ServiciosSection = () => {

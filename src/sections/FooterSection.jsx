@@ -1,5 +1,5 @@
 import { Typography } from "@material-tailwind/react";
-import Footer from "../Components/footer/Footer";
+import Footer from "../componentes/footer/Footer";
 import FooterData from "../data/FooterData.json";
 
 const FooterSection = () => {
