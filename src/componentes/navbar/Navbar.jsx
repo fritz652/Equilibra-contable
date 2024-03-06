@@ -160,8 +160,8 @@ export function StickyNavbar() {
       </Navbar>
       <div id="inicio">
         <div
-          className="w-full h-screen relative bg-cover bg-no-repeat "
-          style={{ height: "600px" }}
+          className="w-full h-full relative bg-cover bg-no-repeat "
+          style={{ height: "470px" }}
         >
           <img
             src={hero}
@@ -179,15 +179,18 @@ export function StickyNavbar() {
         <div className="h-full w-full bg-white">
           <Typography
             variant="lead"
-            className="py-20 px-10 text-center text-2xl"
+            className="py-16 px-16 text-center text-2xl"
           >
-            Somos un equipo de contadoras profesionales, que acompaña y
-            asesora a emprendedores, empresas y profesionales que buscan
-            el crecimiento equilibrado de sus proyectos y la tranquilidad
-            impositiva durante el proceso.
+            Somos un equipo de contadoras profesionales, que 
+            <strong> acompaña</strong> y <strong> asesora</strong> a
+            emprendedores, empresas y profesionales que buscan el 
+            <strong> crecimiento equilibrado</strong> de sus proyectos y la 
+            <strong> tranquilidad impositiva</strong> durante el proceso.
           </Typography>
         </div>
-        <hr className="border-darkGreen max-w-md sm:max-w-[90%] mx-auto mb-5 border" />
+        <div>
+          <hr className="border-darkGreen max-w-md sm:max-w-[90%] mx-auto mb-16 border" />
+        </div>
       </div>
     </div>
   );

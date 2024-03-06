@@ -7,11 +7,13 @@ import ButtonWspSection from "./sections/ButtonWspSection/ButtonWspSection";
 import NosotrasSection from "./sections/NosotrasSection";
 import { Form } from "./componentes/form/Form";
 import Formulario from "./componentes/form/Fromulario";
+import HeroSection from "./sections/HeroSection";
 
 function App() {
   return (
     <div className="App">
       <StickyNavbar />
+      {/* <HeroSection /> */}
       <ServiciosSection />
       {/* <Form /> */}
       <Formulario />

@@ -3,14 +3,16 @@ import { Typography } from "@material-tailwind/react";
 
 const ServiciosSection = () => {
   return (
-    <section className="mt-16" id="servicios">
-      <Typography
-        variant="h3"
-        className="text-center text-darkBlue text-4xl mb-6"
-      >
-        SERVICIOS
-      </Typography>
-      <CarouselCards />
+    <section id="servicios" className="bg-white">
+      <div className="mt-16">
+        <Typography
+          variant="h3"
+          className="text-center text-darkBlue text-4xl mb-6"
+        >
+          SERVICIOS
+        </Typography>
+        <CarouselCards />
+      </div>
     </section>
   );
 };
