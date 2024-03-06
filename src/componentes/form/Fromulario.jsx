@@ -63,7 +63,10 @@ const Formulario = () => {
     setLoading(true);
     const formData = new FormData(e.target);
 
-    formData.append("access_key", import.meta.env.VITE_ACCESS_KEY_IRINA);
+    formData.append(
+      "access_key",
+      import.meta.env.VITE_ACCESS_KEY_IRINA.toString()
+    );
 
     try {
       const res = await fetch("https://api.web3forms.com/submit", {
