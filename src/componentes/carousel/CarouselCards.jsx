@@ -1,10 +1,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
-import {
-  EffectCoverflow,
-  Keyboard,
-} from "swiper/modules";
+import { EffectCoverflow, Keyboard } from "swiper/modules";
 import { cardsData } from "../../data/CardsData";
 import Cards from "../card/Cards";
 import "./Carousel.css";
@@ -59,6 +56,7 @@ function CarouselCards() {
                 title={card.title}
                 description={card.description}
                 img={card.img}
+                link={card.linkWpp}
               />
             </SwiperSlide>
           );
