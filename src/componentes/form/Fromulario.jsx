@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Swal from "sweetalert2";
-import { Typography } from "@material-tailwind/react";
+import { Button, Typography } from "@material-tailwind/react";
 import { Switch } from "@material-tailwind/react";
 import "./Fromulario.css";
 
@@ -10,6 +10,8 @@ const Formulario = () => {
   const [mensaje, setMensaje] = useState("");
   const [subject, setSubject] = useState("");
   const [errores, setErrores] = useState({});
+  const [result, setResult] = useState("");
+  const [loading, setLoading] = useState(false);
 
   const validarEmail = (email) => {
     // Expresión regular para validar el formato de un correo electrónico
@@ -23,7 +25,7 @@ const Formulario = () => {
     return regexNombre.test(nombre);
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     let erroresActuales = {};
@@ -58,14 +60,31 @@ const Formulario = () => {
       return;
     }
 
-    // Envío de datos a través de correo electrónico (simulado)
-    const datos = {
-      nombre,
-      email,
-      mensaje,
-    };
+    setLoading(true);
+    const formData = new FormData(e.target);
 
-    // Aquí se podría escribir el código para enviar los datos a través de un servicio de correo electrónico, no está implementado pero se vería con backend.
+    formData.append("access_key", import.meta.env.VITE_ACCESS_KEY_IRINA);
+
+    try {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
+      }).then((res) => res.json());
+
+      if (res.success) {
+        console.log("Success", res);
+        setResult("Mensaje enviado exitosamente");
+        setLoading(false);
+      } else {
+        console.log("Error", res);
+        setResult("No se pudo enviar el mensaje");
+      }
+    } catch (error) {
+      console.error("There was a problem with the fetch operation:", error);
+      setResult("Hubo un problema al enviar el mensaje");
+    } finally {
+      setLoading(false);
+    }
 
     // Limpiar el formulario después del envío exitoso
     setNombre("");
@@ -75,11 +94,11 @@ const Formulario = () => {
     setErrores({});
 
     // SweetAlert
-    Swal.fire({
-      icon: "success",
-      title: "Mensaje enviado",
-      text: "Tu mensaje ha sido enviado correctamente",
-    });
+    // Swal.fire({
+    //   icon: "success",
+    //   title: "Mensaje enviado",
+    //   text: "Tu mensaje ha sido enviado correctamente",
+    // });
   };
 
   return (
@@ -202,16 +221,16 @@ const Formulario = () => {
               </div>
             </Typography>
             <div className="p-2 w-full flex justify-end">
-              <button
+              <Button
                 type="submit"
                 className="flex text-white bg-lightGreen border-0 py-4 px-8 focus:outline-none rounded-2xl text-lg w-1/2 text-center shadow shadow-md"
+                loading={loading ? true : false}
               >
-                <Typography variant="h4" className="w-full text-center ">
-                  Enviar
-                </Typography>
-              </button>
+                <span className="w-full text-center">Enviar</span>
+              </Button>
             </div>
           </form>
+          <Typography className="text-white">{result}</Typography>
         </div>
       </div>
     </section>

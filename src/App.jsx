@@ -5,9 +5,8 @@ import ServiciosSection from "./sections/ServiciosSection";
 import FooterSection from "./sections/FooterSection";
 import ButtonWspSection from "./sections/ButtonWspSection/ButtonWspSection";
 import NosotrasSection from "./sections/NosotrasSection";
-//import { Form } from "./componentes/form/Form";
+import { Form } from "./componentes/form/Form";
 import Formulario from "./componentes/form/Fromulario";
-
 
 function App() {
   return (
@@ -15,10 +14,10 @@ function App() {
       <StickyNavbar />
       <ServiciosSection />
       {/* <Form /> */}
-      <Formulario/>
+      <Formulario />
       <NosotrasSection />
-      <ButtonWspSection/>
-      <FooterSection/>
+      <ButtonWspSection />
+      <FooterSection />
     </div>
   );
 }
