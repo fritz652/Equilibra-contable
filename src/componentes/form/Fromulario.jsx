@@ -189,37 +189,6 @@ const Formulario = () => {
                 )}
               </div>
             </div>
-            <Typography>
-              <div className="ml-3">
-                <Switch
-                  id="custom-switch-component"
-                  ripple={false}
-                  label={
-                    <div>
-                      <Typography color="white" variant="lead" className="">
-                        Recibir newsletter
-                      </Typography>
-                    </div>
-                  }
-                  className="h-full w-full checked:bg-lightGreen"
-                  containerProps={{
-                    className: "w-16 h-8",
-                  }}
-                  circleProps={{
-                    className:
-                      "before:hidden left-0.5 border border-white bg-white w-8 h-8 p-2",
-                    style: {
-                      backgroundImage:
-                        "url('https://res.cloudinary.com/dsdmjhkms/image/upload/v1709565756/Equilibra-Contable/icons/cmmicam7golvxib2uriz.png')",
-                      backgroundSize: "cover",
-                      backgroundPosition: "center",
-                    },
-                  }}
-                  defaultChecked
-                  style={{ color: "red" }}
-                />
-              </div>
-            </Typography>
             <div className="p-2 w-full flex justify-end">
               <Button
                 type="submit"
