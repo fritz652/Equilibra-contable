@@ -13,9 +13,12 @@ const Footer = () => {
         {p}
       </Typography>
       {socials.map((social, index) => (
-        <Typography  className="py-2 px-10 text-left t-14 mx-20 d-flex " as="a"  href={social.href} target="_blank" key={index} color="white">
-          {social.icon && <img className="iconFooter" src={social.icon} alt="Icon" />}
-          <span>{social.p}</span>
+        <Typography  className="py-2 px-10 text-left t-14 mx-20 d-flex " /* as="a"  href={social.href} */ target="_blank" key={index} color="white">
+          {social.icon && <a  href={social.href} target="_blank"><img className="iconFooter" src={social.icon} alt="Icon" /></a>}
+          <div>
+            <a href={social.href} target="_blank">{social.p}</a>
+            <a href={social.href2} target="_blank">{social.p2}</a>
+          </div>
         </Typography>
       ))}
     </div>
