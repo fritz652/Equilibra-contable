@@ -161,7 +161,7 @@ export function StickyNavbar() {
       <div id="inicio">
         <div
           className="w-full h-full relative bg-cover bg-no-repeat "
-          style={{ height: "470px" }}
+          style={{ height: "460px" }}
         >
           <img
             src={hero}

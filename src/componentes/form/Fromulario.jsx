@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Swal from "sweetalert2";
 import { Button, Typography } from "@material-tailwind/react";
-import { Switch } from "@material-tailwind/react";
 import "./Fromulario.css";
 
 const Formulario = () => {
@@ -63,7 +62,10 @@ const Formulario = () => {
     setLoading(true);
     const formData = new FormData(e.target);
 
-    formData.append("access_key", import.meta.env.VITE_ACCESS_KEY_IRINA);
+    formData.append(
+      "access_key",
+      import.meta.env.VITE_REACT_APP_WEB3FORMS_ACCESS_KEY
+    );
 
     try {
       const res = await fetch("https://api.web3forms.com/submit", {
@@ -73,8 +75,24 @@ const Formulario = () => {
 
       if (res.success) {
         console.log("Success", res);
-        setResult("Mensaje enviado exitosamente");
         setLoading(false);
+
+        // sweet alert
+        const Toast = Swal.mixin({
+          toast: true,
+          position: "top-end",
+          showConfirmButton: false,
+          timer: 3000,
+          timerProgressBar: true,
+          didOpen: (toast) => {
+            toast.onmouseenter = Swal.stopTimer;
+            toast.onmouseleave = Swal.resumeTimer;
+          },
+        });
+        Toast.fire({
+          icon: "success",
+          title: "Mensaje enviado con éxito!",
+        });
       } else {
         console.log("Error", res);
         setResult("No se pudo enviar el mensaje");
@@ -92,13 +110,6 @@ const Formulario = () => {
     setMensaje("");
     setSubject("");
     setErrores({});
-
-    // SweetAlert
-    // Swal.fire({
-    //   icon: "success",
-    //   title: "Mensaje enviado",
-    //   text: "Tu mensaje ha sido enviado correctamente",
-    // });
   };
 
   return (
@@ -199,7 +210,6 @@ const Formulario = () => {
               </Button>
             </div>
           </form>
-          <Typography className="text-white">{result}</Typography>
         </div>
       </div>
     </section>
