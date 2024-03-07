@@ -125,7 +125,7 @@ const NosotrasSection = () => {
                 Nos dicen Tati y Sil y este proyecto inició como una idea allá
                 por el 2017 en una clase de impuestos, nos miramos y dijimos
                 tenemos que hacer que sea más fácil para el contribuyente. Poco
-                a poco fuimos abriendo camino y hace unos 3 años materializamos
+                a poco fuimos abriendo camino y hace unos años materializamos
                 este sueño creando Equilibra Contable.
               </Typography>
               <Typography variant="h5" className="text-darkBlue my-5 text-2xl">

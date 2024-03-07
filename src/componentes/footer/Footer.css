@@ -34,7 +34,7 @@
 }
 
 .iconFooter {
-  height: 75% !important;
+  height: 50px !important; /* 75% !important; */
 }
 .d-grid :nth-child(1) {
   grid-area: uno;
@@ -99,3 +99,9 @@
     font-size: 12px !important;
   }
 }
+
+/* p a .iconFooter{
+  min-height: 50px !important;
+  min-height: 50px !important;
+}
+ */
