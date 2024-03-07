@@ -98,6 +98,14 @@
   .d-grid :nth-child(6) {
     font-size: 12px !important;
   }
+  .d-grid :nth-child(6){
+    a{
+      img{
+        height: 80px !important;
+        margin-left: 20% !important;
+      }
+    }
+  }
   .mx-20{
     margin-left: 2% !important;
     margin-right: 2% !important;
