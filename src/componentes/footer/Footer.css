@@ -34,7 +34,7 @@
 }
 
 .iconFooter {
-  height: 50px !important; /* 75% !important; */
+  height: 75% !important;
 }
 .d-grid :nth-child(1) {
   grid-area: uno;
@@ -97,6 +97,14 @@
   .d-grid :nth-child(5),
   .d-grid :nth-child(6) {
     font-size: 12px !important;
+  }
+  .mx-20{
+    margin-left: 2% !important;
+    margin-right: 2% !important;
+  }
+  .px-12{
+    margin-left: 2% !important;
+    margin-right: 2% !important;
   }
 }
 
