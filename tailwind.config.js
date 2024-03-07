@@ -10,12 +10,12 @@ module.exports = withMT({
         lightBlue: "#5884B0",
         darkGreen: "#206B5E",
         lightGreen: "#95CEC4",
-        gray: "#D9D9D9"
+        gray: "#D9D9D9",
       },
       fontFamily: {
         sans: ["Montserrat", "sans-serif"],
       },
     },
   },
-  plugins: [],
+  plugins: [require("flowbite/plugin")],
 });
